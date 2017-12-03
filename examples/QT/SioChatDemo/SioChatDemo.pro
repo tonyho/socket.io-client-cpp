@@ -28,7 +28,12 @@ CONFIG(debug, debug|release):DEFINES +=DEBUG=1
 
 
 INCLUDEPATH += $$PWD/../../../build/include
+INCLUDEPATH += $$PWD/../../../src
+
 DEPENDPATH += $$PWD/../../../build/lib
+DEPENDPATH += $$PWD/../../../build
+
+LIBS += -L$$PWD/../../../build
 
 CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build/lib/Release/ -lsioclient
 else:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build/lib/Debug/ -lsioclient

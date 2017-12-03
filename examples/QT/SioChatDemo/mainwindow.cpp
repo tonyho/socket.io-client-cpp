@@ -4,7 +4,7 @@
 #include <mutex>
 #include <cstdlib>
 
-#define kURL "ws://localhost:3000"
+#define kURL "ws://localhost:3001"
 #ifdef WIN32
 #define BIND_EVENT(IO,EV,FN) \
     do{ \
